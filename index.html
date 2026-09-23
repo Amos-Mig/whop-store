@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business Operations Packs — Checklists &amp; Prompt Packs</title>
+<meta name="description" content="Ready-to-use checklist and prompt packs for 20 business verticals: pricing, operations, retention and weekly numbers. One-time price, instant download, updates included.">
+<style>
+  :root { --bg: #0b0d12; --card: #14171f; --text: #e8eaf0; --muted: #9aa3b2; --accent: #34d399; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background:
+      radial-gradient(1100px 600px at 85% -10%, rgba(52, 211, 153, 0.13), transparent 60%),
+      radial-gradient(900px 550px at -10% 15%, rgba(16, 185, 129, 0.10), transparent 60%),
+      radial-gradient(800px 500px at 50% 110%, rgba(56, 189, 248, 0.08), transparent 60%),
+      var(--bg);
+    background-attachment: fixed;
+    color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.5;
+  }
+  header { padding: 48px 24px 8px; max-width: 1280px; margin: 0 auto; }
+  .brand { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .brand a { color: var(--muted); text-decoration: none; font-size: 15px; }
+  .brand a:hover { color: var(--text); }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; margin-top: 24px; }
+  h1 .grad {
+    background: linear-gradient(92deg, #6ee7b7, #38bdf8);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub { color: var(--muted); margin-top: 10px; max-width: 720px; font-size: 17px; }
+  .sub strong { color: var(--text); }
+  .filters { display: flex; flex-wrap: wrap; gap: 10px; padding: 28px 24px 8px; max-width: 1280px; margin: 0 auto; }
+  .filter { background: var(--card); color: var(--muted); border: 1px solid #262b36; border-radius: 999px;
+            padding: 9px 18px; font-size: 14px; cursor: pointer; transition: all .15s; }
+  .filter:hover { color: var(--text); border-color: var(--accent); }
+  .filter.active { background: var(--accent); color: #06281c; border-color: var(--accent); font-weight: 600; }
+  #search { display: block; margin: 18px auto 0; width: min(640px, calc(100% - 48px)); background: var(--card);
+            border: 1px solid #262b36; color: var(--text); border-radius: 12px; padding: 12px 18px; font-size: 15px; outline: none; }
+  #search:focus { border-color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px;
+          max-width: 1280px; margin: 24px auto; padding: 0 24px 40px; }
+  .card { background: var(--card); border: 1px solid #262b36; border-radius: 16px; overflow: hidden;
+          display: flex; flex-direction: column; transition: transform .15s, border-color .15s; }
+  .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .card img { width: 100%; height: auto; display: block; background: #1a1e28; }
+  .card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .kind { font-size: 12.5px; color: var(--muted); text-transform: capitalize; }
+  .price { font-weight: 700; font-size: 15px; margin-left: auto; }
+  .badge { font-size: 11px; font-weight: 700; color: #06281c; background: var(--accent);
+           border-radius: 999px; padding: 3px 9px; text-transform: uppercase; letter-spacing: .04em; }
+  .card h3 { font-size: 17px; line-height: 1.25; }
+  .card p { color: var(--muted); font-size: 14px; flex: 1; }
+  .cta { display: block; text-align: center; background: var(--accent); color: #06281c; text-decoration: none;
+         font-weight: 700; font-size: 14.5px; border-radius: 10px; padding: 10px 12px; margin-top: 6px; }
+  a.cta:hover { filter: brightness(1.1); }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 24px; border-top: 1px solid #1d2230; }
+  footer a { color: var(--text); }
+  .empty { text-align: center; color: var(--muted); padding: 40px; display: none; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <strong>amosm / store</strong>
+      <a href="https://kits.amosmignery.dev" target="_blank" rel="noopener">Dev kits →</a>
+      <a href="https://amosmignery.dev" target="_blank" rel="noopener">← amosmignery.dev</a>
+    </div>
+    <h1>Operations packs <span class="grad">for businesses that run on process</span></h1>
+    <p class="sub"><strong>Checklists and prompt packs</strong> for 20 business verticals —
+    trades, clinics, studios, agencies, sellers. Every item marked agent-automatable or human-decision.
+    Plain files, no software lock-in, instant download. One-time price, <strong>updates included</strong>.</p>
+  </header>
+  <div class="filters">
+      <button class="filter active" data-filter="all">All (20)</button>
+      <button class="filter" data-filter="auto-detailing-business">Auto Detailing Business (1)</button>
+      <button class="filter" data-filter="auto-repair-shop-ops">Auto Repair Shop Ops (1)</button>
+      <button class="filter" data-filter="business-coaching-practice">Business Coaching Practice (1)</button>
+      <button class="filter" data-filter="catering-personal-chefs">Catering Personal Chefs (1)</button>
+      <button class="filter" data-filter="childcare-operations">Childcare Operations (1)</button>
+      <button class="filter" data-filter="course-creator-operations">Course Creator Operations (1)</button>
+      <button class="filter" data-filter="dental-practice-ops">Dental Practice Ops (1)</button>
+      <button class="filter" data-filter="drone-services-business">Drone Services Business (1)</button>
+      <button class="filter" data-filter="etsy-printable-sellers">Etsy Printable Sellers (1)</button>
+      <button class="filter" data-filter="hvac-contractor-ops">Hvac Contractor Ops (1)</button>
+      <button class="filter" data-filter="insurance-agency-ops">Insurance Agency Ops (1)</button>
+      <button class="filter" data-filter="interior-design-studio">Interior Design Studio (1)</button>
+      <button class="filter" data-filter="landscaping-lawn-care">Landscaping Lawn Care (1)</button>
+      <button class="filter" data-filter="med-spa-operations">Med Spa Operations (1)</button>
+      <button class="filter" data-filter="music-lesson-business">Music Lesson Business (1)</button>
+      <button class="filter" data-filter="podcast-production-business">Podcast Production Business (1)</button>
+      <button class="filter" data-filter="self-published-authors">Self Published Authors (1)</button>
+      <button class="filter" data-filter="senior-home-care">Senior Home Care (1)</button>
+      <button class="filter" data-filter="trucking-owner-operators">Trucking Owner Operators (1)</button>
+      <button class="filter" data-filter="veterinary-clinic-ops">Veterinary Clinic Ops (1)</button>
+  </div>
+  <input id="search" type="search" placeholder="Search 20 products…" autocomplete="off">
+  <main class="grid" id="grid">
+    <article class="card" data-kind="auto-detailing-business" data-title="auto-detailing-business-bundle auto detailing business bundle - 100 checklists &amp; prompt packs for pricing, memberships and mobile routes">
+      <img src="covers/auto-detailing-business-bundle.png" alt="Auto Detailing Business Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Auto Detailing Business Bundle</h3>
+        <p>The eight-angle intake photos got skipped again on a busy Saturday, a pet-hair interior was priced like a quick add-on, and the mobile van lost its afternoon margin to drive time - while deposits, weather-day calls…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_4zWVvJSZNJoJN" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="auto-repair-shop-ops" data-title="auto-repair-shop-ops-bundle auto repair shop operations bundle - 100 checklists &amp; prompt packs for estimates, parts and labor rates">
+      <img src="covers/auto-repair-shop-ops-bundle.png" alt="Auto Repair Shop Ops Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Auto Repair Shop Ops Bundle</h3>
+        <p>Estimates sit unsigned past their expiration date, parts get ordered before the approval is in writing, and flag hours leak all week without anyone running the efficiency math - then a comeback lands and the warranty…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_1NOgVBPJ1YWDr" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="business-coaching-practice" data-title="business-coaching-practice-bundle business coaching practice bundle - 100 checklists &amp; prompt packs for discovery calls, offers and retention">
+      <img src="covers/business-coaching-practice-bundle.png" alt="Business Coaching Practice Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$29</span></div>
+        <h3>Business Coaching Practice Bundle</h3>
+        <p>Another discovery call turned into a pitch instead of a diagnosis, the group cohort is ghosting in week four, and the calendar is so back-to-back that a renewed client's testimonial ask slipped to renewal time - when…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_zQ4MRHOOfvtpv" target="_blank" rel="noopener">Buy on Whop &middot; $29</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="catering-personal-chefs" data-title="catering-personal-chefs-bundle catering &amp; personal chef bundle - 100 checklists &amp; prompt packs for quotes, food cost and event staffing">
+      <img src="covers/catering-personal-chefs-bundle.png" alt="Catering Personal Chefs Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Catering Personal Chefs Bundle</h3>
+        <p>Quotes go out without a headcount-final clause, tastings get given away free with no conversion plan, and dietary needs surface the day before service.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_co4MIqU1wqXms" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="childcare-operations" data-title="childcare-operations-bundle childcare operations bundle - 100 checklists &amp; prompt packs for enrollment, waitlists, billing and staffing">
+      <img src="covers/childcare-operations-bundle.png" alt="Childcare Operations Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Childcare Operations Bundle</h3>
+        <p>Tours leak out of the funnel with no tracking of which source they came from, billing disputes start because the tuition policy was never in plain language, and staff retention only gets attention when a room drops…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_sSg9SrFWa66xd" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="course-creator-operations" data-title="course-creator-operations-bundle course creator operations bundle - 100 checklists &amp; prompt packs for launches, refunds and completion">
+      <img src="covers/course-creator-operations-bundle.png" alt="Course Creator Operations Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Course Creator Operations Bundle</h3>
+        <p>Pre-sales outrun the build, refund promises contradict what checkout actually does, and the community goes silent by week three - while launch emails go out to a list that stopped opening months ago.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_NVuXLIdsp4bWg" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="dental-practice-ops" data-title="dental-practice-ops-bundle dental practice operations bundle - 100 checklists &amp; prompt packs for recalls, insurance and scheduling">
+      <img src="covers/dental-practice-ops-bundle.png" alt="Dental Practice Ops Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Dental Practice Ops Bundle</h3>
+        <p>Six months of hygiene recalls drift, insurance claims bounce for avoidable reasons, and the schedule quietly fills with no-shows - while the front desk is too busy to build systems for any of it.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_oc2Mq0Lmg1dGr" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="drone-services-business" data-title="drone-services-business-bundle drone services business bundle - 100 checklists &amp; prompt packs for quotes, deliverables and seasonal revenue">
+      <img src="covers/drone-services-business-bundle.png" alt="Drone Services Business Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Drone Services Business Bundle</h3>
+        <p>The deliverable list was never in writing, so the client disputes the angles after delivery; your rate card ignores editing hours and gear amortization, so the small jobs lose money; and real estate season ends while…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_MsyWRE1MbWUQx" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="etsy-printable-sellers" data-title="etsy-printable-sellers-bundle etsy printable seller bundle - 100 checklists &amp; prompt packs for tags, seasonal listings and shop policies">
+      <img src="covers/etsy-printable-sellers-bundle.png" alt="Etsy Printable Sellers Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$19</span></div>
+        <h3>Etsy Printable Sellers Bundle</h3>
+        <p>Half your listings run on single-word tags, the Christmas designs went up in November, and a buyer is reselling your unwatermarked preview as their own digital product - while the bundle you launched last month…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_iPnWlHNPOTiA4" target="_blank" rel="noopener">Buy on Whop &middot; $19</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="hvac-contractor-ops" data-title="hvac-contractor-ops-bundle hvac contractor operations bundle - 100 checklists &amp; prompt packs for agreements, dispatch and pricing">
+      <img src="covers/hvac-contractor-ops-bundle.png" alt="Hvac Contractor Ops Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Hvac Contractor Ops Bundle</h3>
+        <p>Maintenance agreements nobody sells because techs have no reason to, emergency calls triaged by whoever answers the phone, and replacement quotes written without a load calc - while warranty deadlines slip past and…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_t7zGwgN1onSX8" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="insurance-agency-ops" data-title="insurance-agency-ops-bundle insurance agency operations bundle - 100 checklists &amp; prompt packs for follow-up, renewals and cross-selling">
+      <img src="covers/insurance-agency-ops-bundle.png" alt="Insurance Agency Ops Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$29</span></div>
+        <h3>Insurance Agency Ops Bundle</h3>
+        <p>Inbound leads go cold after two touches because nobody owns the 30-day cadence, x-dates live in someone's head instead of a rolling 90-day list, and commission statements arrive, get skimmed, and the discrepancies…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_PoR86ZSMqb0SU" target="_blank" rel="noopener">Buy on Whop &middot; $29</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="interior-design-studio" data-title="interior-design-studio-bundle interior design studio bundle - 100 checklists &amp; prompt packs for proposals, procurement and install days">
+      <img src="covers/interior-design-studio-bundle.png" alt="Interior Design Studio Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$29</span></div>
+        <h3>Interior Design Studio Bundle</h3>
+        <p>Procurement margins disappear into untracked trade discounts, revision loops run past any written round limit, and installation day fails because nobody built a receiving-and-inspection schedule.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_OeGbas5KrZ2sH" target="_blank" rel="noopener">Buy on Whop &middot; $29</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="landscaping-lawn-care" data-title="landscaping-lawn-care-bundle landscaping &amp; lawn care operations bundle - 100 checklists &amp; prompt packs for routes, quotes and crews">
+      <img src="covers/landscaping-lawn-care-bundle.png" alt="Landscaping Lawn Care Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Landscaping Lawn Care Bundle</h3>
+        <p>Routes priced without drive time, quotes eyeballed instead of measured, and a rain day that wipes the schedule with no protocol to recover it - while the crew waits and the season's margin leaks a stop at a time.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_DvnNjS1FSoGzv" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="med-spa-operations" data-title="med-spa-operations-bundle med spa operations bundle - 100 checklists &amp; prompt packs for consults, consent, memberships and no-shows">
+      <img src="covers/med-spa-operations-bundle.png" alt="Med Spa Operations Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Med Spa Operations Bundle</h3>
+        <p>Treatment plans die in the DMs, consults leave without booking, and the schedule leaks no-shows while deposits go unenforced - and the front desk is too deep in reminders and consent forms to fix any of it.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_Js8qz0WeRGG6a" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="music-lesson-business" data-title="music-lesson-business-bundle music lesson business bundle - 100 checklists &amp; prompt packs for scheduling, tuition, makeups and recitals">
+      <img src="covers/music-lesson-business-bundle.png" alt="Music Lesson Business Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$19</span></div>
+        <h3>Music Lesson Business Bundle</h3>
+        <p>July tuition collapses because everyone is on pay-per-lesson, makeup lessons quietly swallow the teaching week, and the recital is six weeks out with no venue contract and no program order.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_34BcvKXPNcZ2T" target="_blank" rel="noopener">Buy on Whop &middot; $19</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="podcast-production-business" data-title="podcast-production-business-bundle podcast production business bundle - 100 checklists &amp; prompt packs for client shows, sponsors and retainers">
+      <img src="covers/podcast-production-business-bundle.png" alt="Podcast Production Business Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$29</span></div>
+        <h3>Podcast Production Business Bundle</h3>
+        <p>The guest pipeline runs dry at episode 7, editing standards drift from one client show to the next, and a four-episode backlog sits in the almost-done lane while the Friday status sweep catches it too late.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_DzuyRAS0hnFSd" target="_blank" rel="noopener">Buy on Whop &middot; $29</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="self-published-authors" data-title="self-published-authors-bundle self-published author bundle - 100 checklists &amp; prompt packs for launch weeks, blurbs and read-through">
+      <img src="covers/self-published-authors-bundle.png" alt="Self Published Authors Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$19</span></div>
+        <h3>Self Published Authors Bundle</h3>
+        <p>Launch week arrives with no review team behind it, book one goes permafree with no read-through wired up behind it, and the series bible exists only in memory.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_aMG6v01yecB5N" target="_blank" rel="noopener">Buy on Whop &middot; $19</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="senior-home-care" data-title="senior-home-care-bundle home care agency operations bundle - 100 checklists &amp; prompt packs for scheduling, ltc claims and caregivers">
+      <img src="covers/senior-home-care-bundle.png" alt="Senior Home Care Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Senior Home Care Bundle</h3>
+        <p>A caregiver no-show at shift change triggers the backup pool, the family call and the incident entry before 9am, LTC insurance claims come back rejected for missing visit notes, and a referral source goes cold…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_YJU6OiwxEoNod" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="trucking-owner-operators" data-title="trucking-owner-operators-bundle owner-operator trucking bundle - 100 checklists &amp; prompt packs for load selection, cost-per-mile and cash flow">
+      <img src="covers/trucking-owner-operators-bundle.png" alt="Trucking Owner Operators Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$29</span></div>
+        <h3>Trucking Owner Operators Bundle</h3>
+        <p>You booked the load because the rate per mile looked good and never subtracted the deadhead, the broker's detention clock ran two hours and you never invoiced it, and the maintenance reserve quietly funded a truck…</p>
+        <a class="cta" href="https://whop.com/checkout/plan_1jGhw6h3Hc0IM" target="_blank" rel="noopener">Buy on Whop &middot; $29</a>
+      </div>
+    </article>
+
+    <article class="card" data-kind="veterinary-clinic-ops" data-title="veterinary-clinic-ops-bundle veterinary clinic operations bundle - 100 checklists &amp; prompt packs for recalls, reminders and front desk">
+      <img src="covers/veterinary-clinic-ops-bundle.png" alt="Veterinary Clinic Ops Bundle" loading="lazy" width="1280" height="720">
+      <div class="card-body">
+        <div class="card-top"><span class="kind">bundle</span><span class="badge">Best value</span><span class="price">$24</span></div>
+        <h3>Veterinary Clinic Ops Bundle</h3>
+        <p>Vaccine recalls go out once and quietly stop, the reminder ladder never gets a fourth attempt, and unconfirmed appointments turn into no-shows while estimates sit unapproved in the queue.</p>
+        <a class="cta" href="https://whop.com/checkout/plan_6WA836mlJGBDc" target="_blank" rel="noopener">Buy on Whop &middot; $24</a>
+      </div>
+    </article>
+  </main>
+  <p class="empty" id="empty">No products match your search.</p>
+  <footer>
+    <p>All products are digital downloads delivered by
+    <a href="https://whop.com" target="_blank" rel="noopener">Whop</a> (secure checkout). Free tiers and the full
+    catalog are public on GitHub — try before you buy.</p>
+    <p><a href="https://kits.amosmignery.dev">Developer kits</a> &middot;
+    <a href="https://amosmignery.dev" target="_blank" rel="noopener">Contact / amosmignery.dev</a></p>
+  </footer>
+<script>
+  const cards = [...document.querySelectorAll('.card')];
+  const empty = document.getElementById('empty');
+  let activeFilter = 'all';
+  let query = '';
+  function apply() {
+    let shown = 0;
+    for (const c of cards) {
+      const okFilter = activeFilter === 'all' || c.dataset.kind === activeFilter;
+      const okSearch = !query || c.dataset.title.includes(query);
+      const show = okFilter && okSearch;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    }
+    empty.style.display = shown ? 'none' : 'block';
+  }
+  document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.filter').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    activeFilter = b.dataset.filter;
+    apply();
+  }));
+  document.getElementById('search').addEventListener('input', e => {
+    query = e.target.value.toLowerCase().trim();
+    apply();
+  });
+</script>
+</body>
+</html>
