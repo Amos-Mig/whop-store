@@ -35,7 +35,6 @@
   .filters { display: flex; flex-wrap: wrap; gap: 10px; padding: 28px 24px 8px; max-width: 1280px; margin: 0 auto; }
   .filter.more { display: none; }
   .filters.expanded .filter.more { display: inline-block; }
-  .filters.expanded .more-toggle { display: none; }
   .filter { background: var(--card); color: var(--muted); border: 1px solid #262b36; border-radius: 999px;
             padding: 7px 14px; font-size: 13.5px; cursor: pointer; transition: all .15s; }
   .filter:hover { color: var(--text); border-color: var(--accent); }
@@ -86,7 +85,7 @@
       <button class="filter" data-filter="music-lesson-business">Music Lesson Business (3)</button>
       <button class="filter" data-filter="trucking-owner-operators">Trucking Owner Operators (3)</button>
       <button class="filter" data-filter="auto-repair-shop-ops">Auto Repair Shop Ops (2)</button>
-      <button class="filter more-toggle" id="moreToggle" type="button">+ 18 more</button>
+      <button class="filter more-toggle" id="moreToggle" type="button" data-more-label="+ 18 more">+ 18 more</button>
       <button class="filter more" data-filter="course-creator-operations">Course Creator Operations (2)</button>
       <button class="filter more" data-filter="hvac-contractor-ops">Hvac Contractor Ops (2)</button>
       <button class="filter more" data-filter="med-spa-operations">Med Spa Operations (2)</button>
@@ -538,8 +537,10 @@
     activeFilter = b.dataset.filter;
     apply();
   }));
-  document.getElementById('moreToggle').addEventListener('click', () => {
-    document.querySelector('.filters').classList.add('expanded');
+  const moreToggle = document.getElementById('moreToggle');
+  moreToggle.addEventListener('click', () => {
+    const expanded = document.querySelector('.filters').classList.toggle('expanded');
+    moreToggle.textContent = expanded ? '− less' : moreToggle.dataset.moreLabel;
   });
   document.getElementById('search').addEventListener('input', e => {
     query = e.target.value.toLowerCase().trim();
