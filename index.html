@@ -59,19 +59,16 @@
          font-weight: 700; font-size: 14.5px; border-radius: 10px; padding: 10px 12px; margin-top: 6px; }
   a.cta:hover { filter: brightness(1.1); }
   footer { border-top: 1px solid #1d2230; margin-top: 8px; }
-  .f-inner { max-width: 1280px; margin: 0 auto; padding: 36px 24px 8px;
-             display: flex; flex-wrap: wrap; gap: 28px 56px; align-items: flex-start; }
-  .f-col { display: flex; flex-direction: column; gap: 8px; min-width: 160px; }
-  .f-col strong { color: var(--text); font-size: 13px; text-transform: uppercase;
-                  letter-spacing: .06em; margin-bottom: 2px; }
-  .f-col a { color: var(--muted); text-decoration: none; font-size: 14px; }
-  .f-col a:hover { color: var(--accent); }
-  .f-brand { min-width: 260px; flex: 1; max-width: 420px; }
-  .f-brand strong { color: var(--text); font-size: 15px; text-transform: none; letter-spacing: 0; }
-  .f-brand span { color: var(--muted); font-size: 13.5px; line-height: 1.55; }
+  .f-inner { max-width: 1280px; margin: 0 auto; padding: 32px 24px 0;
+             display: flex; flex-wrap: wrap; gap: 12px 40px; justify-content: space-between; align-items: flex-start; }
+  .f-brand strong { color: var(--text); font-size: 15px; display: block; }
+  .f-brand span { color: var(--muted); font-size: 13.5px; line-height: 1.55; display: block; margin-top: 4px; max-width: 460px; }
+  .f-links { display: flex; gap: 22px; align-items: center; }
+  .f-links a { color: var(--muted); text-decoration: none; font-size: 14px; }
+  .f-links a:hover { color: var(--accent); }
   .f-bottom { max-width: 1280px; margin: 0 auto; padding: 18px 24px 28px;
               display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between;
-              color: var(--muted); font-size: 13px; border-top: 1px solid #1d2230; margin-top: 24px; }
+              color: var(--muted); font-size: 13px; }
   .f-bottom strong { color: var(--text); }
   .empty { text-align: center; color: var(--muted); padding: 40px; display: none; }
 </style>
@@ -520,25 +517,19 @@
   <p class="empty" id="empty">No products match your search.</p>
   <footer>
     <div class="f-inner">
-      <div class="f-col f-brand">
+      <div class="f-brand">
         <strong>amosm / store</strong>
         <span>Checklists and prompt packs for 24 business verticals.
-        Digital downloads delivered by <a href="https://whop.com" target="_blank" rel="noopener">Whop</a> (secure checkout).</span>
+        Digital downloads, secure checkout and delivery via Whop.</span>
       </div>
-      <nav class="f-col">
-        <strong>Store</strong>
-        <a href="https://store.amosmignery.dev/">All products</a>
-        <a href="https://whop.com" target="_blank" rel="noopener">Whop checkout</a>
-      </nav>
-      <nav class="f-col">
-        <strong>Elsewhere</strong>
-        <a href="https://amosmignery.dev" target="_blank" rel="noopener">Portfolio / contact</a>
+      <nav class="f-links">
+        <a href="https://amosmignery.dev" target="_blank" rel="noopener">amosmignery.dev</a>
         <a href="https://kits.amosmignery.dev" target="_blank" rel="noopener">Dev kits</a>
       </nav>
     </div>
     <div class="f-bottom">
       <p>One-time price, <strong>updates included</strong> — re-download anytime from your Whop library.</p>
-      <p>&copy; 2026 amosmignery.dev</p>
+      <p>&copy; 2026 amosm</p>
     </div>
   </footer>
 <script>
