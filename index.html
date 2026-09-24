@@ -63,9 +63,10 @@
              display: flex; flex-wrap: wrap; gap: 12px 40px; justify-content: space-between; align-items: flex-start; }
   .f-brand strong { color: var(--text); font-size: 15px; display: block; }
   .f-brand span { color: var(--muted); font-size: 13.5px; line-height: 1.55; display: block; margin-top: 4px; max-width: 460px; }
-  .f-links { display: flex; gap: 22px; align-items: center; }
-  .f-links a { color: var(--muted); text-decoration: none; font-size: 14px; }
+  .f-links { display: flex; gap: 10px; align-items: center; }
+  .f-links a { color: var(--text); text-decoration: none; font-size: 14px; }
   .f-links a:hover { color: var(--accent); }
+  .f-links a + a::before { content: '\00b7'; color: var(--muted); margin-right: 10px; }
   .f-bottom { max-width: 1280px; margin: 0 auto; padding: 18px 24px 28px;
               display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between;
               color: var(--muted); font-size: 13px; }
